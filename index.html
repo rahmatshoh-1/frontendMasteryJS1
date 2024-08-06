@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-200">
+    <div class="container mx-auto md:h-screen flex items-center">
+      <div
+        class="md:w-3/5 mx-auto shadow-lg rounded-xl bg-white flex-col flex md:flex-row md:overflow-hidden h-60"
+      >
+        <img
+          class="md:w-2/5 object-cover"
+          src="https://images.unsplash.com/photo-1722384034934-72f5f5c3b87c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <div class="md:w-3/5 p-8">
+          <h2 class="font-bold text-lg">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+
+          <p class="text-sm text-gray-500 my-3">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <span class="md:hidden flex justify-between items-center  bg-gray-900 text-white">
+            <div class="flex justify-between gap-4 p-4 items-center"><span class="text-lg">Share</span>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  fill="white"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 32.380773 34.967178 39.306373 27 40.720703 L 27 29 L 30.625 29 C 31.129 29 31.555188 28.623047 31.617188 28.123047 L 31.992188 25.123047 C 32.028188 24.839047 31.938047 24.553891 31.748047 24.337891 C 31.559047 24.122891 31.287 24 31 24 L 27 24 L 27 20.5 C 27 19.397 27.897 18.5 29 18.5 L 31 18.5 C 31.552 18.5 32 18.053 32 17.5 L 32 14.125 C 32 13.607 31.604844 13.174906 31.089844 13.128906 C 31.030844 13.123906 29.619984 13 27.833984 13 C 23.426984 13 21 15.616187 21 20.367188 L 21 24 L 17 24 C 16.448 24 16 24.447 16 25 L 16 28 C 16 28.553 16.448 29 17 29 L 21 29 L 21 40.720703 C 13.032822 39.306373 7 32.380773 7 24 C 7 14.593391 14.593385 7 24 7 z"
+                  ></path>
+                </svg> </a
+              ><a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-width="2"
+                    d="M5.296,15.689c-0.062,3.099,2.27,5.352,6,5.811c-1.399,1.375-3.73,1.833-6.527,1.833C6.634,25.625,9.897,27,13.16,27 c10.482,0,14.229-8.005,14.229-15.347c1.043-0.992,1.266-1.461,1.611-2.577l-0.917-0.524c0,0,0.897-1.318,0.897-2.689 c-1.35,0.076-2.301,0.327-3.294,0.991C24.472,5.655,23.309,5,21.67,5c-3.148,0-5.345,2.219-5.287,5.473 C11.296,10.042,7.566,8.208,3.61,5.875c-1.264,2.507-0.706,5.541,3.024,6.458"
+                  ></path>
+                  <path
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-width="2"
+                    d="M4.022,10.93c-0.862,2.98,0.977,5.539,4.011,5.961"
+                  ></path>
+                </svg> </a
+              ><a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  fill="white"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,2C6.477,2,2,6.477,2,12c0,4.237,2.636,7.855,6.356,9.312c-0.087-0.791-0.167-2.005,0.035-2.868 c0.182-0.78,1.172-4.971,1.172-4.971s-0.299-0.599-0.299-1.484c0-1.391,0.806-2.428,1.809-2.428c0.853,0,1.265,0.641,1.265,1.408 c0,0.858-0.546,2.141-0.828,3.329c-0.236,0.996,0.499,1.807,1.481,1.807c1.777,0,3.143-1.874,3.143-4.579 c0-2.394-1.72-4.068-4.177-4.068c-2.845,0-4.515,2.134-4.515,4.34c0,0.859,0.331,1.781,0.744,2.282 c0.082,0.099,0.093,0.186,0.069,0.287c-0.076,0.316-0.244,0.995-0.277,1.134c-0.043,0.183-0.145,0.222-0.334,0.133 c-1.249-0.582-2.03-2.408-2.03-3.874c0-3.154,2.292-6.052,6.608-6.052c3.469,0,6.165,2.472,6.165,5.776 c0,3.447-2.173,6.22-5.189,6.22c-1.013,0-1.966-0.527-2.292-1.148c0,0-0.502,1.909-0.623,2.378 c-0.226,0.868-0.835,1.958-1.243,2.622C9.975,21.843,10.969,22,12,22c5.522,0,10-4.478,10-10S17.523,2,12,2z"
+                  ></path>
+                </svg>
+              </a></div>
+            <button class="bg-gray-500 p-2 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14.47 2.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H9a5.25 5.25 0 1 0 0 10.5h3a.75.75 0 0 1 0 1.5H9a6.75 6.75 0 0 1 0-13.5h10.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </span>
+          <div class="hidden md:flex items-center justify-between">
+            <div class="flex items-center">
+              <img
+                class="w-10 h-10 rounded-full"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+              />
+              <p class="ml-2">
+                Michelle Appleton
+                <br />
+                <span class="text-sm text-gray-500">28 Jun 2020</span>
+              </p>
+            </div>
+            <div class="attribution">
+              <div id="share"
+                class="bg-gray-800 text-white px-10 py-4 rounded-md absolute -mt-20 -ml-24"
+              >
+                <span class="flex items-center gap-4">
+                  <span class="text-lg">Share</span>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      fill="white"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 48 48"
+                    >
+                      <path
+                        d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 32.380773 34.967178 39.306373 27 40.720703 L 27 29 L 30.625 29 C 31.129 29 31.555188 28.623047 31.617188 28.123047 L 31.992188 25.123047 C 32.028188 24.839047 31.938047 24.553891 31.748047 24.337891 C 31.559047 24.122891 31.287 24 31 24 L 27 24 L 27 20.5 C 27 19.397 27.897 18.5 29 18.5 L 31 18.5 C 31.552 18.5 32 18.053 32 17.5 L 32 14.125 C 32 13.607 31.604844 13.174906 31.089844 13.128906 C 31.030844 13.123906 29.619984 13 27.833984 13 C 23.426984 13 21 15.616187 21 20.367188 L 21 24 L 17 24 C 16.448 24 16 24.447 16 25 L 16 28 C 16 28.553 16.448 29 17 29 L 21 29 L 21 40.720703 C 13.032822 39.306373 7 32.380773 7 24 C 7 14.593391 14.593385 7 24 7 z"
+                      ></path>
+                    </svg> </a
+                  ><a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="2"
+                        d="M5.296,15.689c-0.062,3.099,2.27,5.352,6,5.811c-1.399,1.375-3.73,1.833-6.527,1.833C6.634,25.625,9.897,27,13.16,27 c10.482,0,14.229-8.005,14.229-15.347c1.043-0.992,1.266-1.461,1.611-2.577l-0.917-0.524c0,0,0.897-1.318,0.897-2.689 c-1.35,0.076-2.301,0.327-3.294,0.991C24.472,5.655,23.309,5,21.67,5c-3.148,0-5.345,2.219-5.287,5.473 C11.296,10.042,7.566,8.208,3.61,5.875c-1.264,2.507-0.706,5.541,3.024,6.458"
+                      ></path>
+                      <path
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="2"
+                        d="M4.022,10.93c-0.862,2.98,0.977,5.539,4.011,5.961"
+                      ></path>
+                    </svg> </a
+                  ><a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      fill="white"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12,2C6.477,2,2,6.477,2,12c0,4.237,2.636,7.855,6.356,9.312c-0.087-0.791-0.167-2.005,0.035-2.868 c0.182-0.78,1.172-4.971,1.172-4.971s-0.299-0.599-0.299-1.484c0-1.391,0.806-2.428,1.809-2.428c0.853,0,1.265,0.641,1.265,1.408 c0,0.858-0.546,2.141-0.828,3.329c-0.236,0.996,0.499,1.807,1.481,1.807c1.777,0,3.143-1.874,3.143-4.579 c0-2.394-1.72-4.068-4.177-4.068c-2.845,0-4.515,2.134-4.515,4.34c0,0.859,0.331,1.781,0.744,2.282 c0.082,0.099,0.093,0.186,0.069,0.287c-0.076,0.316-0.244,0.995-0.277,1.134c-0.043,0.183-0.145,0.222-0.334,0.133 c-1.249-0.582-2.03-2.408-2.03-3.874c0-3.154,2.292-6.052,6.608-6.052c3.469,0,6.165,2.472,6.165,5.776 c0,3.447-2.173,6.22-5.189,6.22c-1.013,0-1.966-0.527-2.292-1.148c0,0-0.502,1.909-0.623,2.378 c-0.226,0.868-0.835,1.958-1.243,2.622C9.975,21.843,10.969,22,12,22c5.522,0,10-4.478,10-10S17.523,2,12,2z"
+                      ></path>
+                    </svg>
+                  </a>
+                </span>
+                <div
+                  class="w-0 h-0 absolute ml-16 mt-4 border-l-[10px] border-l-transparent border-t-[10px] border-t-gray-900 border-r-[10px] border-r-transparent"
+                ></div>
+              </div>
+              <button id="click" class="bg-gray-500 p-2 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.47 2.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H9a5.25 5.25 0 1 0 0 10.5h3a.75.75 0 0 1 0 1.5H9a6.75 6.75 0 0 1 0-13.5h10.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let click = document.getElementById("click");
+    let share = document.getElementById("share");
+    click.addEventListener("click", function () {
+        if(share.style.display === "none"){
+          share.style.display = "block";
+        }else{
+          share.style.display = "none";
+        }
+    });
+  </script>
+</html>
